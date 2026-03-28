@@ -3,6 +3,7 @@
 namespace App\Filament\Resources\Categories\Schemas;
 
 use Filament\Forms\Components\FileUpload;
+use Filament\Forms\Components\RichEditor;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Textarea;
@@ -22,6 +23,7 @@ class CategoryForm
                 TextInput::make('slug')
                     ->disabledOn('edit')
                     ->required(),
+
                 TextInput::make('email')->email(),
                 TextInput::make('domain')->prefix('https://')->suffix('.com'),
                 TextInput::make('password')->password()->revealable(),
@@ -31,11 +33,15 @@ class CategoryForm
                     '342342', '56756456', '789789789'
                 ])->native(false)->searchable()->multiple(),
 
-                Textarea::make('content')
+                RichEditor::make('content')
                     ->required()
                     ->columnSpanFull(),
+
+
                 FileUpload::make('image')
-                    ->image(),
+                    ->image()->imageEditor()->multiple(),
+
+
             ])->columns(3);
     }
 }

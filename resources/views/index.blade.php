@@ -30,7 +30,7 @@
 										<img src="images/pic01.jpg" alt=""/>
 									</span>
                 <header class="major">
-                    <h3><a href="landing.blade.php" class="link">Aliquam</a></h3>
+                    <h3><a href="landing" class="link">Aliquam</a></h3>
                     <p>Ipsum dolor sit amet</p>
                 </header>
             </article>
@@ -39,7 +39,7 @@
 										<img src="images/pic02.jpg" alt=""/>
 									</span>
                 <header class="major">
-                    <h3><a href="landing.blade.php" class="link">Tempus</a></h3>
+                    <h3><a href="landing" class="link">Tempus</a></h3>
                     <p>feugiat amet tempus</p>
                 </header>
             </article>
@@ -48,7 +48,7 @@
 										<img src="images/pic03.jpg" alt=""/>
 									</span>
                 <header class="major">
-                    <h3><a href="landing.blade.php" class="link">Magna</a></h3>
+                    <h3><a href="landing" class="link">Magna</a></h3>
                     <p>Lorem etiam nullam</p>
                 </header>
             </article>
@@ -57,7 +57,7 @@
 										<img src="images/pic04.jpg" alt=""/>
 									</span>
                 <header class="major">
-                    <h3><a href="landing.blade.php" class="link">Ipsum</a></h3>
+                    <h3><a href="landing" class="link">Ipsum</a></h3>
                     <p>Nisl sed aliquam</p>
                 </header>
             </article>
@@ -66,7 +66,7 @@
 										<img src="images/pic05.jpg" alt=""/>
 									</span>
                 <header class="major">
-                    <h3><a href="landing.blade.php" class="link">Consequat</a></h3>
+                    <h3><a href="landing" class="link">Consequat</a></h3>
                     <p>Ipsum dolor sit amet</p>
                 </header>
             </article>
@@ -75,7 +75,7 @@
 										<img src="images/pic06.jpg" alt=""/>
 									</span>
                 <header class="major">
-                    <h3><a href="landing.blade.php" class="link">Etiam</a></h3>
+                    <h3><a href="landing" class="link">Etiam</a></h3>
                     <p>Feugiat amet tempus</p>
                 </header>
             </article>
@@ -93,64 +93,11 @@
                     tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet pharetra et
                     feugiat tempus.</p>
                 <ul class="actions">
-                    <li><a href="landing.blade.php" class="button next">Get Started</a></li>
+                    <li><a href="landing" class="button next">Get Started</a></li>
                 </ul>
             </div>
         </section>
 
     </div>
-
-    <!-- Contact -->
-    <section id="contact">
-        <div class="inner">
-            <section>
-                <form method="post" action="#">
-                    <div class="fields">
-                        <div class="field half">
-                            <label for="name">Name</label>
-                            <input type="text" name="name" id="name"/>
-                        </div>
-                        <div class="field half">
-                            <label for="email">Email</label>
-                            <input type="text" name="email" id="email"/>
-                        </div>
-                        <div class="field">
-                            <label for="message">Message</label>
-                            <textarea name="message" id="message" rows="6"></textarea>
-                        </div>
-                    </div>
-                    <ul class="actions">
-                        <li><input type="submit" value="Send Message" class="primary"/></li>
-                        <li><input type="reset" value="Clear"/></li>
-                    </ul>
-                </form>
-            </section>
-            <section class="split">
-                <section>
-                    <div class="contact-method">
-                        <span class="icon solid alt fa-envelope"></span>
-                        <h3>Email</h3>
-                        <a href="#">information@untitled.tld</a>
-                    </div>
-                </section>
-                <section>
-                    <div class="contact-method">
-                        <span class="icon solid alt fa-phone"></span>
-                        <h3>Phone</h3>
-                        <span>(000) 000-0000 x12387</span>
-                    </div>
-                </section>
-                <section>
-                    <div class="contact-method">
-                        <span class="icon solid alt fa-home"></span>
-                        <h3>Address</h3>
-                        <span>1234 Somewhere Road #5432<br/>
-										Nashville, TN 00000<br/>
-										United States of America</span>
-                    </div>
-                </section>
-            </section>
-        </div>
-    </section>
 
 @endsection

@@ -32,6 +32,7 @@ class CategoryResource extends Resource
         return CategoryForm::configure($schema);
     }
 
+
     public static function table(Table $table): Table
     {
         return CategoriesTable::configure($table);

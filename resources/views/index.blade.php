@@ -8,11 +8,10 @@
     <section id="banner" class="major">
         <div class="inner">
             <header class="major">
-                <h1>Hi, my name is Forty</h1>
+                <h1>{{$home->h1}}</h1>
             </header>
             <div class="content">
-                <p>A responsive site template designed by HTML5 UP<br/>
-                    and released under the Creative Commons.</p>
+                <p>{{$home->description}}</p>
                 <ul class="actions">
                     <li><a href="#one" class="button next scrolly">Get Started</a></li>
                 </ul>
@@ -25,60 +24,18 @@
 
         <!-- One -->
         <section id="one" class="tiles">
-            <article>
+            @foreach($services as $service)
+
+                <article>
 									<span class="image">
-										<img src="images/pic01.jpg" alt=""/>
+										<img src="{{ asset('storage/' . $service->image) }}" alt="">
 									</span>
-                <header class="major">
-                    <h3><a href="landing" class="link">Aliquam</a></h3>
-                    <p>Ipsum dolor sit amet</p>
-                </header>
-            </article>
-            <article>
-									<span class="image">
-										<img src="images/pic02.jpg" alt=""/>
-									</span>
-                <header class="major">
-                    <h3><a href="landing" class="link">Tempus</a></h3>
-                    <p>feugiat amet tempus</p>
-                </header>
-            </article>
-            <article>
-									<span class="image">
-										<img src="images/pic03.jpg" alt=""/>
-									</span>
-                <header class="major">
-                    <h3><a href="landing" class="link">Magna</a></h3>
-                    <p>Lorem etiam nullam</p>
-                </header>
-            </article>
-            <article>
-									<span class="image">
-										<img src="images/pic04.jpg" alt=""/>
-									</span>
-                <header class="major">
-                    <h3><a href="landing" class="link">Ipsum</a></h3>
-                    <p>Nisl sed aliquam</p>
-                </header>
-            </article>
-            <article>
-									<span class="image">
-										<img src="images/pic05.jpg" alt=""/>
-									</span>
-                <header class="major">
-                    <h3><a href="landing" class="link">Consequat</a></h3>
-                    <p>Ipsum dolor sit amet</p>
-                </header>
-            </article>
-            <article>
-									<span class="image">
-										<img src="images/pic06.jpg" alt=""/>
-									</span>
-                <header class="major">
-                    <h3><a href="landing" class="link">Etiam</a></h3>
-                    <p>Feugiat amet tempus</p>
-                </header>
-            </article>
+                    <header class="major">
+                        <h3><a href="landing" class="link">{{$service->name}}</a></h3>
+                        <p>{{ $service->description }}</p>
+                    </header>
+                </article>
+            @endforeach
         </section>
 
         <!-- Two -->

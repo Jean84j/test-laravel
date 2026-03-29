@@ -2,9 +2,10 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('index');
-});
+use App\Http\Controllers\SiteController;
+
+Route::get('/', [SiteController::class, 'index']);
+
 
 Route::get('/landing', function () {
     return view('landing');

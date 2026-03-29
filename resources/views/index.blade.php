@@ -13,7 +13,7 @@
             <div class="content">
                 <p>{{$home->description}}</p>
                 <ul class="actions">
-                    <li><a href="#one" class="button next scrolly">Get Started</a></li>
+                    <li><a href="#contact" class="button next scrolly">Get Started</a></li>
                 </ul>
             </div>
         </div>

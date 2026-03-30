@@ -7,4 +7,9 @@ use Illuminate\Database\Eloquent\Model;
 class Service extends Model
 {
     protected $fillable = ['parent_id', 'name', 'description', 'slug', 'image'];
+
+    public function parent()
+    {
+        return $this->belongsTo(self::class, 'parent_id');
+    }
 }

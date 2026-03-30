@@ -6,4 +6,4 @@
     </nav>
 </header>
 
-@include('menu')
+@include('header.menu')

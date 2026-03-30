@@ -10,9 +10,9 @@ class SiteController extends Controller
 {
     public function index()
     {
-        $services = Service::all();
+        $services = Service::whereNull('parent_id')->get();
         $home = Home::first();
 
-         return view('index', ['services' => $services, 'home' => $home]);
+         return view('site.index', ['services' => $services, 'home' => $home]);
     }
 }

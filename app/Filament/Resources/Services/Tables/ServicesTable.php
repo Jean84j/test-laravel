@@ -17,8 +17,14 @@ class ServicesTable
             ->columns([
                 TextColumn::make('name')
                     ->searchable(),
-                TextColumn::make('slug')
-                    ->searchable(),
+
+                TextColumn::make('parent.name')
+                    ->label('Родитель')
+                    ->default('-'),
+
+//                TextColumn::make('slug')
+//                    ->searchable(),
+
                 ImageColumn::make('image'),
                 TextColumn::make('created_at')
                     ->dateTime()

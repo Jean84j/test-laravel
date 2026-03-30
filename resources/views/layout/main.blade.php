@@ -13,13 +13,13 @@
 <body class="is-preload">
 <div id="wrapper">
 
-    @include('header')
+    @include('header.header')
 
     @yield('content')
 
-    @include('contact')
+    @include('contact.contact')
 
-    @include('footer')
+    @include('footer.footer')
 
 </div>
 <script src="{{ asset('assets/js/jquery.min.js') }}"></script>

@@ -19,4 +19,4 @@ Route::get('/elements', function () {
     return view('elements');
 });
 
-Route::get('/{slug}', [ServiceController::class, 'show']);
+Route::get('/service/{slug}', [ServiceController::class, 'show']);

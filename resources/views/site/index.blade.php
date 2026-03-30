@@ -31,7 +31,7 @@
 										<img src="{{ asset('storage/' . $service->image) }}" alt="">
 									</span>
                     <header class="major">
-                        <h3><a href="/{{$service->slug}}" class="link">{{$service->name}}</a></h3>
+                        <h3><a href="/service/{{$service->slug}}" class="link">{{$service->name}}</a></h3>
                         <p>{{ $service->description }}</p>
                     </header>
                 </article>

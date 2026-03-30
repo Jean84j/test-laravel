@@ -3,11 +3,11 @@
 <nav id="menu">
     <ul class="links">
         <li><a href="/">Головна</a></li>
-        <li><a href="landing">Статті</a></li>
-        <li><a href="landing">Часті Питання</a></li>
-        <li><a href="landing">* Landing</a></li>
-        <li><a href="generic">* Generic</a></li>
-        <li><a href="elements">* Elements</a></li>
+        <li><a href="/landing">Статті</a></li>
+        <li><a href="/landing">Часті Питання</a></li>
+        <li><a href="/landing">* Landing</a></li>
+        <li><a href="/generic">* Generic</a></li>
+        <li><a href="/elements">* Elements</a></li>
     </ul>
     <ul class="actions stacked">
         <li><a href="#" class="button primary fit">Get Started</a></li>
